@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f3ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchBox {
+    border-radius: 55px;
+    padding: 30px;
+    background: #f0f3ff;
+    display: flex;
+    align-items: center;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(225, 225, 225, 0.7);
+}
+
+#googleicon {
+    width: 50px;
+    cursor: pointer;
+}
+
+.googlevoice {
+    width: 0px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+input {
+    border: 0;
+    width: 0px;
+    font-size: 20px;
+    background: transparent;
+    outline: none;
+    transition: 2s;
+}
+
+.active input {
+    width: 500px;
+    padding: 12px 20px;
+
+}
+
+.active .googlevoice {
+    width: 30px;
+}
